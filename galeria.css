@@ -1,0 +1,93 @@
+/* Reset básico */
+
+body{
+    background-color: rgb(196, 186, 184);
+}
+
+
+nav{
+    background-color: rgb(52, 38, 14); /*cor do fundo do menu*/
+    padding: 20px 0; /* espaçamento interno*/;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+nav ul{
+    list-style-type: none; /* remove as bolinhas padrão*/
+    margin: 0;
+    padding: 0;
+    display: flex/* faz com que os itens fique lado a lado*/;
+    justify-content: center;/* centraliza os itens*/;
+    
+}
+nav ul li{
+margin:0 15px /* espaçamento entre os menus */;
+}
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 18px; /* tamanho da fonte*/;
+    transition: color 0.3s;/* transição suave para a mudança de cor*/;
+    align-items: center;
+}
+nav ul li a :hover{
+    color: brown/* cor do texto ao passar o  mouse*/;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta três itens por linha */
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove o espaço abaixo da imagem */
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+
+section {
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
